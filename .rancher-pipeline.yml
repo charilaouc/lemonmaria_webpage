@@ -1,0 +1,10 @@
+stages:
+- name: compile
+  steps:
+  - applyAppConfig:
+      catalogTemplate: name
+      version: "1"
+      name: app
+      targetNamespace: default
+timeout: 60
+notification: {}
